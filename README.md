@@ -10,13 +10,13 @@ This program is written for [fuzzel](https://codeberg.org/dnkl/fuzzel).
 
 With fuzzel in [sway](https://swaywm.org/), it can be emulate to behave *Start Menu* in Windows 11 when you hit `Win` key.
 
-~/.config/sway/config.d/default
+- ~/.config/sway/config.d/default
 ```
 # Start your launcher (Win key single-tap)
 bindcode 133 exec toggle-pgm fuzzel
 ```
 
-~/.config/fuzzel/fuzzel.ini
+- ~/.config/fuzzel/fuzzel.ini
 ```ini
 [key-bindings]
 #cancel=Escape Control+g Control+c
