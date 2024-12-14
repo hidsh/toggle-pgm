@@ -3,11 +3,11 @@
 ```
 Usage: toggle-pgm proc_name args ...
 ```
-Starts `proc_name` if it does **not** exist, otherwise kill it.
+Starts `proc_name` if it does **not** exist, otherwise just kill it.
 
 # for what?
-This program is written for fuzzel.
-With fuzzel in sway, It can be emulate to behave *Start Menu* in Windows 11 when you hit `Win` key.
+This program is written for [fuzzel](https://codeberg.org/dnkl/fuzzel).
+With fuzzel in [sway](https://swaywm.org/), It can be emulate to behave *Start Menu* in Windows 11 when you hit `Win` key.
 
 ```:~/.config/sway/config.d/default
 # Start your launcher (Win key single-tap)
