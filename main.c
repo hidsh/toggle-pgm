@@ -96,9 +96,9 @@ int main(int argc, char* argv[])
     }
 
     char *name = argv[1];
-	pid_t pid = proc_find(name);
-	if (pid == -1) {
-		// printf("%s: No process found, so new process starts\n", name);
+    pid_t pid = proc_find(name);
+    if (pid == -1) {
+        // printf("%s: No process found, so new process starts\n", name);
 
         char cmdline[BUFSIZE] = "";
         int ret = get_cmd_string(cmdline, argv, argc);
@@ -112,13 +112,13 @@ int main(int argc, char* argv[])
             fprintf(stderr, "Error: Cannot start '%s'\n", argv[1]);
             return -1;
         }
-	} else {
+    } else {
         printf("%s: %d found, so trying to kill it\n", name, pid);
 
         if (try_kill(pid) != 0) {
             fprintf(stderr, "Error: Cannot kill '%s', PID=%d\n", argv[1], pid);
             return -1;
         }
-	}
+    }
     return 0;
 }
